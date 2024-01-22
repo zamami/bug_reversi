@@ -63,4 +63,8 @@ class Position
     else raise 'Unknown direction'
     end
   end
+
+  def no_stone?(board)
+    board[row][col] == '-'
+  end
 end
