@@ -87,6 +87,8 @@ module ReversiMethods
         return true if put_stone(board, position.to_cell_ref, attack_stone_color, dry_run: true)
       end
     end
+
+    false  # どのセルも空白ではない場合は false を返す
   end
 
   def count_stone(board, stone_color)
