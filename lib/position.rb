@@ -65,6 +65,6 @@ class Position
   end
 
   def no_stone?(board)
-    board[row][col] == '-'
+    board[row][col] == ReversiMethods::BLANK_CELL
   end
 end
